@@ -99,12 +99,12 @@ def animate(frame):
     
     # Создаем новые стрелки с обновленными параметрами
     velocity_arrow = ax.arrow(current_x, current_y, 
-                            current_vx/25, current_vy/25,  # масштабируем длину векторов
+                            current_vx/25, current_vy/25,
                             color='g', width=0.02, 
                             head_width=0.1, head_length=0.1)
     
     acceleration_arrow = ax.arrow(current_x, current_y, 
-                                current_ax/500, current_ay/500,  # масштабируем длину векторов
+                                current_ax/500, current_ay/500,
                                 color='r', width=0.02, 
                                 head_width=0.1, head_length=0.1)
     
@@ -113,7 +113,7 @@ def animate(frame):
     current_tang_acc_y = tang_acc_y_f(current_t)
     
     tangential_arrow = ax.arrow(current_x, current_y, 
-                               current_tang_acc_x/500, current_tang_acc_y/500,  # масштабируем длину векторов
+                               current_tang_acc_x/500, current_tang_acc_y/500,
                                color='blue', width=0.02, 
                                head_width=0.1, head_length=0.1)
     
